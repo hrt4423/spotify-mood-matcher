@@ -2,16 +2,17 @@
   "name": "spotify-mood-matcher",
   "version": "1.0.0",
   "description": "A simple app to match moods with Spotify tracks",
-  "main": "index.js",
+  "main": "dist/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode=development",
-    "start": "webpack serve --mode=development"
+    "build": "tsc",
+    "start": "lite-server"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "lite-server": "^2.6.1",
     "ts-loader": "^9.5.1",
     "typescript": "^5.5.2",
     "webpack": "^5.92.1",

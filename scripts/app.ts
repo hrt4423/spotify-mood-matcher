@@ -1,5 +1,5 @@
-const clientId = 'YOUR_SPOTIFY_CLIENT_ID';
-const clientSecret = 'YOUR_SPOTIFY_CLIENT_SECRET';
+const clientId = '653d095e5e4c4decb4a5383a712c8d13';
+const clientSecret = '684678406db74861a1c3ca950191804c';
 
 // アクセストークンを取得する関数
 async function fetchAccessToken(): Promise<string> {
@@ -43,4 +43,5 @@ function displayTracks(tracks: any[]): void {
     });
 }
 
-export { fetchTracks };
+// fetchTracks 関数をグローバルに公開
+(window as any).fetchTracks = fetchTracks;
