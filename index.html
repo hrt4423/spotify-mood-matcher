@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Mood Matcher</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h1>Spotify Mood Matcher</h1>
+    <select id="mood">
+        <option value="happy">Happy</option>
+        <option value="sad">Sad</option>
+        <option value="energetic">Energetic</option>
+        <option value="calm">Calm</option>
+    </select>
+    <button onclick="fetchTracks()">Find Tracks</button>
+    <div id="tracks"></div>
+
+    <script src="dist/app.js" type="module"></script>
+</body>
+</html>
